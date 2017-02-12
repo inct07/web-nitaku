@@ -15,5 +15,4 @@ $ rake db:create
 $ rails s
 ```
 
-ブラウザで下記URLに接続できたら成功
-http://localhost:3000/
+[ブラウザで接続](http://localhost:3000/)できたら成功
