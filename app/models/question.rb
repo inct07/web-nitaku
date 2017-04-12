@@ -25,6 +25,8 @@ class Question < ApplicationRecord
     has_one sym, dependent: :destroy
   end
 
+  scope :all_questions, -> { includes(BODY_SYMBOLS, SELECTION_SYMBOLS) }
+
   def body
     public_send(BODY_TYPES[body_type].to_s.underscore.to_sym)
   end

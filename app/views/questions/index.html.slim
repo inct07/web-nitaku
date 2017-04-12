@@ -1,0 +1,5 @@
+.container
+  - @questions.each do |question|
+    div
+      = render 'questions/question', question: question
+      
