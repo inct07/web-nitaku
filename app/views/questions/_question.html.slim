@@ -1,0 +1,4 @@
+.question-body
+  = render "questions/body/#{Question::BODY_TYPES[question.body_type].to_s.underscore}", body: question.body
+.quesstion-selection
+  = render "questions/selection/#{Question::SELECTION_TYPES[question.selection_type].to_s.underscore}", selection: question.selection
